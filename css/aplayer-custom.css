@@ -1,116 +1,116 @@
 /* ============================================
    APlayer & MetingJS 深色毛玻璃美化
-   针对白色功能区 → 深色半透明风格
+   深色背景 + 深色文字，上一首/下一首可见
    ============================================ */
 
 /* --- 播放器主体：毛玻璃深色背景 --- */
 .aplayer {
-  background: rgba(30, 30, 40, 0.85) !important;
+  background: rgba(20, 20, 30, 0.88) !important;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 12px 12px 0 0 !important;
-  color: #e0e0e0 !important;
+  color: #2a2a35 !important;
   font-family: "Microsoft YaHei", "苹方", "PingFang SC", sans-serif !important;
 }
 
-/* --- 歌单列表区域（原本是白色）--- */
+/* --- 歌单列表区域 --- */
 .aplayer .aplayer-list {
-  background: rgba(20, 20, 30, 0.75) !important;
+  background: rgba(15, 15, 25, 0.8) !important;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border: none !important;
   border-radius: 0 0 12px 12px !important;
 }
 
-/* 歌单每一项 */
+/* 歌单每一项 - 深色文字 */
 .aplayer .aplayer-list ol li {
   background: transparent !important;
-  color: #c8c8d0 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+  color: #3a3a48 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
   transition: background 0.2s ease;
 }
 
 /* 歌单悬停 */
 .aplayer .aplayer-list ol li:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: #fff !important;
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #1a1a28 !important;
 }
 
 /* 当前播放歌曲高亮 */
 .aplayer .aplayer-list ol li.aplayer-list-light {
-  background: rgba(100, 100, 140, 0.35) !important;
-  color: #fff !important;
+  background: rgba(30, 30, 50, 0.15) !important;
+  color: #1a1a28 !important;
   border-radius: 6px !important;
 }
 
 /* 当前播放指示条 */
 .aplayer-list-cur {
-  background-color: #5b9cf5 !important;
+  background-color: #3a3a50 !important;
   width: 3px !important;
   border-radius: 2px !important;
 }
 
-/* --- 歌曲信息区域 --- */
+/* --- 歌曲信息区域 - 深色文字 --- */
 .aplayer .aplayer-info {
   background: transparent !important;
   border: none !important;
-  color: #e0e0e0 !important;
+  color: #2a2a35 !important;
 }
 
 /* 歌曲名 */
 .aplayer .aplayer-info .aplayer-music {
-  color: #e8e8f0 !important;
+  color: #2a2a35 !important;
 }
 
 .aplayer .aplayer-info .aplayer-music .aplayer-title {
-  color: #e8e8f0 !important;
+  color: #2a2a35 !important;
   font-size: 14px !important;
 }
 
 /* 艺术家 */
 .aplayer .aplayer-info .aplayer-music .aplayer-author {
-  color: #a0a0b8 !important;
+  color: #5a5a68 !important;
   font-size: 12px !important;
 }
 
-/* --- 控制器图标颜色 --- */
+/* --- 控制器图标 - 深色 --- */
 .aplayer .aplayer-info .aplayer-controller .aplayer-time {
-  color: #b0b0c0 !important;
+  color: #4a4a58 !important;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-icon path {
-  fill: #c0c0d0 !important;
+  fill: #3a3a48 !important;
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-icon:hover path {
-  fill: #fff !important;
+  fill: #1a1a28 !important;
 }
 
 /* 音量图标 */
 .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-icon path {
-  fill: #c0c0d0 !important;
+  fill: #3a3a48 !important;
 }
 
 /* --- 进度条 --- */
 .aplayer .aplayer-bar-wrap {
-  background: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(0, 0, 0, 0.08) !important;
 }
 
 .aplayer .aplayer-bar-wrap .aplayer-bar {
-  background: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(0, 0, 0, 0.12) !important;
 }
 
 .aplayer .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
 .aplayer .aplayer-bar-wrap .aplayer-bar .aplayer-played {
-  background: #5b9cf5 !important;
+  background: #3a3a50 !important;
 }
 
 .aplayer .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
-  background: #fff !important;
-  box-shadow: 0 0 8px rgba(91, 156, 245, 0.6) !important;
+  background: #2a2a38 !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* --- 滚动条 --- */
@@ -123,30 +123,30 @@
 }
 
 .aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15) !important;
+  background: rgba(0, 0, 0, 0.12) !important;
   border-radius: 3px;
 }
 
 .aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(0, 0, 0, 0.25) !important;
 }
 
 /* --- 歌词区域 --- */
 .aplayer .aplayer-lrc {
-  color: #c0c0d0 !important;
+  color: #4a4a58 !important;
 }
 
 .aplayer .aplayer-lrc p {
-  color: #a0a0b8 !important;
+  color: #5a5a68 !important;
 }
 
 .aplayer .aplayer-lrc p.aplayer-lrc-current {
-  color: #5b9cf5 !important;
+  color: #2a2a38 !important;
 }
 
 /* --- 迷你切换按钮 --- */
 .aplayer.aplayer-fixed .aplayer-miniswitcher {
-  background: rgba(30, 30, 40, 0.85) !important;
+  background: rgba(20, 20, 30, 0.88) !important;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 0 8px 8px 0 !important;
@@ -154,7 +154,7 @@
 }
 
 .aplayer.aplayer-fixed .aplayer-miniswitcher .aplayer-icon path {
-  fill: #c0c0d0 !important;
+  fill: #3a3a48 !important;
 }
 
 /* --- 固定模式圆角 --- */
@@ -168,18 +168,64 @@
 
 /* --- 歌单序号颜色 --- */
 .aplayer .aplayer-list ol li .aplayer-list-index {
-  color: #808090 !important;
+  color: #6a6a78 !important;
 }
 
-/* --- 暗色模式覆盖（跟随博客 dark 主题）--- */
+/* ============================================
+   确保上一首/下一首按钮始终可见
+   ============================================ */
+
+/* fixed 模式下默认隐藏的控制器，强制显示 */
+.aplayer.aplayer-fixed .aplayer-body .aplayer-controller {
+  /* 确保控制栏完整可见 */
+}
+
+/* 上一首/下一首图标在 fixed 模式不被隐藏 */
+.aplayer.aplayer-fixed .aplayer-icon-back,
+.aplayer.aplayer-fixed .aplayer-icon-forward,
+.aplayer.aplayer-fixed .aplayer-icon-left,
+.aplayer.aplayer-fixed .aplayer-icon-right,
+.aplayer.aplayer-fixed .aplayer-icon-skip {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 确保控制栏按钮区域足够宽 */
+.aplayer.aplayer-fixed .aplayer-controller {
+  width: auto !important;
+  min-width: 120px !important;
+}
+
+/* --- 暗色模式覆盖 --- */
 [data-theme="dark"] .aplayer {
-  background: rgba(18, 18, 28, 0.9) !important;
+  background: rgba(12, 12, 20, 0.92) !important;
 }
 
 [data-theme="dark"] .aplayer .aplayer-list {
-  background: rgba(12, 12, 20, 0.85) !important;
+  background: rgba(8, 8, 16, 0.88) !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li {
+  color: #4a4a58 !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-list ol li:hover {
+  color: #2a2a38 !important;
 }
 
 [data-theme="dark"] .aplayer .aplayer-list ol li.aplayer-list-light {
-  background: rgba(80, 80, 110, 0.4) !important;
+  background: rgba(60, 60, 80, 0.2) !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-music .aplayer-title {
+  color: #3a3a48 !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-icon path {
+  fill: #4a4a58 !important;
+}
+
+[data-theme="dark"] .aplayer .aplayer-info .aplayer-controller .aplayer-icon:hover path {
+  fill: #2a2a38 !important;
 }
