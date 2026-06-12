@@ -16,4 +16,19 @@
         <tag>博客</tag>
       </tags>
   </entry>
+  <entry>
+    <title>蓝图</title>
+    <url>/TouHou223/2026/06/12/%E8%93%9D%E5%9B%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\TouHou223\assets\css\APlayer.min.css"><script src="\TouHou223\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>基于GAS搭建全流程技能系统。</p>
+<p>运用行为树&#x2F;状态树搭建人物动画逻辑。</p>
+<p>配置数据表规范属性逻辑。</p>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>GAS</tag>
+        <tag>游戏开发</tag>
+      </tags>
+  </entry>
 </search>
